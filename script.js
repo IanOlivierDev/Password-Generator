@@ -20,7 +20,7 @@ let generatedPassword = document.querySelector('#generatedPassword');
 let btn = document.querySelector("#generate");
 let numberInput = document.querySelector("#numberInput");
 
-let numberOfChars = 0;
+let numberOfChars = 1;
 numberInput.addEventListener('change', function(event){
     numberOfChars = numberInput.value;
     console.log(numberOfChars);
