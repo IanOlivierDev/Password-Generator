@@ -23,6 +23,12 @@ let numberInput = document.querySelector("#numberInput");
 let numberOfChars = 1;
 numberInput.addEventListener('change', function(event){
     numberOfChars = numberInput.value;
+    if (numberOfChars > 50){
+        btn.disabled = true;
+    }
+    else{
+        btn.disabled = false;
+    }
     console.log(numberOfChars);
 });
 
